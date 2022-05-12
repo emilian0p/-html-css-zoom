@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+header, main{
+    background-color: black;
+}
+header{
+    height: 5vh;
+}
+footer{
+    background-color: rgb(29, 28, 28);
+    height: 5vh;
+}
+main{
+    height: ;
+}
+.top-corner{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 
 
@@ -12,8 +30,9 @@
 
 
 
-
-
+.foot div{
+    display: inline-block;
+}
 .rbot-txt{
     background-color: rgb(91, 88, 88);
 }
