@@ -32,6 +32,9 @@ header button{
     cursor: pointer;
 }
 
+main{
+    calc(100vh - 125px)
+}
 main .bbg{
     display: flex;
     height: 100%;
