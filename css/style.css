@@ -1,69 +1,133 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 }
 
-header, main{
-    background-color: black;
+a{
+    text-decoration: none;
+    color: whitesmoke;
 }
-header{
-    height: 5vh;
+i{
+    color: whitesmoke;
 }
-footer{
-    background-color: rgb(29, 28, 28);
-    height: 5vh;
+.container{
+    display: flex;
 }
-main{
-    height: ;
-}
-.top-corner{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-header button{
-    margin: 5px;
-    border: 0;
-    background-color: #4a4a4a;
+.button{
     padding: 5px;
+    background-color: grey;
+}
+
+img{
+    width: 100%;
+}
+
+/*     Header rules */
+.t-header{
+    background-color: black;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 70px;
+    width: 100%;
+
+}
+.t-header .button{
+    color: whitesmoke;
+    margin: 5px;
     border-radius: 5px;
+}
+.t-header i{
     color: white;
+
+}
+
+.t-header .container i{
+    align-self: center;
+    margin-right: 3px;    
+}
+
+/* main rules */
+main{
+    height: calc(100vh - 70px - 80px);
+    overflow:scroll;
+    overflow-x: hidden;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 5px 10px;
+}
+
+.picture{
+    position: relative;
+    margin: 10px;
+}
+
+.username{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    background-color: rgba(34, 34, 34, 9);
+    padding: 5px;
+    color: white;
+}
+
+/* footer rules */
+.bottom{
+    background-color: #222222;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+
+    color: whitesmoke;
+    
+
+}
+
+
+.f-left{
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.icon-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
     cursor: pointer;
 }
 
-main{
-    calc(100vh - 125px)
+.icon-container:hover{
+    color: green;
+    
 }
-main .bbg{
-    display: flex;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+
+.icon-container:hover i{
+    color: green;
+    
+}
+.f-mid{
+    flex-shrink: 0;
     align-items: center;
-    overflow-y: auto;
-}
-.mid-img{
-    width: 250px;
-    height: 150px;
-    position: relative;
-    padding: 2px;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
-
-
-
-.bot-button{
-    display: flex;
-    flex-direction: nowrap;
-    justify-content: space-around;
+.f-right{
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
-.foot div{
-    display: inline-block;
-}
-.rbot-txt{
-    background-color: rgb(91, 88, 88);
-}
-.rbot-txt{
+
+.meeting{
+    background-color: grey;
     color: red;
+    height: 100%;
+    padding: 0 10px;
 }
